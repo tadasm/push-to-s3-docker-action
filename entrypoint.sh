@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+aws-cloudfront-cache-invalidate.sh && aws-s3-sync.sh
+
 #echo "test env var"
 #echo "$AWS_ACCESS_KEY_ID"
 #aws s3 sync --exclude "*.git*" . s3://resume.bofh.lt --region eu-west-1
