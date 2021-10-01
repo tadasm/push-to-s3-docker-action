@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-aws-cloudfront-cache-invalidate.sh && aws-s3-sync.sh
+/aws-cloudfront-cache-invalidate.sh && /aws-s3-sync.sh
 
 #echo "test env var"
 #echo "$AWS_ACCESS_KEY_ID"
