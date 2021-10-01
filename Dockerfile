@@ -10,7 +10,3 @@ COPY aws-cloudfront-cache-invalidate.sh /aws-cloudfront-cache-invalidate.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
-
-RUN ["/aws-s3-sync.sh"]
-
-RUN ["/aws-cloudfront-cache-invalidate.sh"]
