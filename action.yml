@@ -1,6 +1,8 @@
 # action.yml
 name: 'Hello World'
 description: 'Greet someone and record the time'
+env: # Or as an environment variable
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
