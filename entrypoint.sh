@@ -1,5 +1,4 @@
 #!/bin/sh -l
 
 echo "Hello $1"
-time=$(date)
-echo "::set-output name=time::$time"
+aws s3 sync --dryrun  --exclude "*.git*" . s3://resume.bofh.lt
